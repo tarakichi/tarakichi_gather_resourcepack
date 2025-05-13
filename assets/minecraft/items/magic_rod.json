@@ -1,6 +1,6 @@
 {
     "model": {
         "type": "minecraft:model",
-        "model": "minectaft:magic_rod"
+        "model": "minecraft:item/magic_rod"
     }
 }
