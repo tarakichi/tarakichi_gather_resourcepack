@@ -1,6 +1,6 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "gather:magic_rod"
+        "layer0": "gather:item/magic_rod"
     }
 }

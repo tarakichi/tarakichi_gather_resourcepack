@@ -2,12 +2,5 @@
     "pack": {
         "pack_format": 46,
         "description": "tarakichi gather resourcepack"
-    },
-    "filter": {
-        "block": [
-            {
-                "namespace": "gather"
-            }
-        ]
     }
 }
