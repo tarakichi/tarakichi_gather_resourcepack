@@ -82,6 +82,26 @@
 
 チップの効果の一覧は、プラグインの `chips.yml` と README にあります。
 
+### 画面下の表示（フォント）
+
+置いているチップは、画面下（ホットバーの上の行）に、**同じ絵を小さく（約 10px）** 並べて出します（例: 絵 `×2`）。そのため、**`textures/item/chip_<id>.png` の絵が、そのまま画面下の表示にも使われます**。小さくしても見分けがつくように描いてください。
+
+- 絵は、フォント定義 `assets/minecraft/font/chips.json`（フォント id `minecraft:chips`）に、文字として登録してあります。
+- 文字と id の対応（プラグインの `chips.yml` の `glyph` と、同じ）:
+
+| チップ id | 文字コード | チップ id | 文字コード |
+|---|---|---|---|
+| `chip_echo` | U+E000 | `chip_savings` | U+E007 |
+| `chip_rebate` | U+E001 | `chip_tenacity` | U+E008 |
+| `chip_trace` | U+E002 | `chip_grit` | U+E009 |
+| `chip_fuse` | U+E003 | `chip_fury` | U+E00A |
+| `chip_chain` | U+E004 | `chip_solace` | U+E00B |
+| `chip_vein` | U+E005 | | |
+| `chip_tailwind` | U+E006 | | |
+
+- 絵を描き直すだけなら、フォント定義は触りません。
+- 新しいチップを足すときは、`font/chips.json` に 1 つ足し（`file` は `minecraft:item/chip_<id>.png`、`chars` は次の空いている文字）、プラグインの `chips.yml` の `glyph` に同じ文字コードを書きます。
+
 ## 使っていないもの
 
 | id | 備考 |
